@@ -67,14 +67,12 @@
 <body>
 <main>
     <jsp:include page="body.inc/header.jsp"/>
-    <main>
-        <div class="container">
-            여기는 내용!
-            여기에 입력
+    <div class="container">
+        여기는 내용!
+        여기에 입력
 
-        </div>
+    </div>
 
-    </main>
 
 </main>
 </body>
