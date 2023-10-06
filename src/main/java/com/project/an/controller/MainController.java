@@ -1,7 +1,6 @@
 package com.project.an.controller;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +11,7 @@ public class MainController {
     @GetMapping("")@PostMapping
     public String root() {
 
-        return "/main";
+        return "/sample";
     }
     @GetMapping("r1")@PostMapping
     public String root1() {
