@@ -13,10 +13,10 @@ public class MainController {
 
         return "/sample";
     }
-    @GetMapping("r1")@PostMapping
+    @GetMapping("map")@PostMapping
     public String root1() {
 
-        return "/main1";
+        return "/map";
     }
     @GetMapping("r2")@PostMapping
     public String root2() {
