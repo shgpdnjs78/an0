@@ -4,7 +4,7 @@
 <html>
 <head>
     <jsp:include page="template/header.jsp">
-        <jsp:param value="인덱스페이지4" name="title"/>
+        <jsp:param value="인덱스페이지8" name="title"/>
     </jsp:include>
 
         <style>
@@ -491,7 +491,7 @@
     <body>
     <div class="board_wrap">
         <div class="board_title">
-            <strong>마이페이지</strong>
+            <strong>게시판</strong>
         </div>
         <div class="board_list_wrap">
             <div class="board_list">
@@ -499,31 +499,43 @@
                     <div class="num">번호</div>
                     <div class="title">제목</div>
                     <div class="date">작성일</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
                 </div>
                 <div>
                     <div class="num">5</div>
                     <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
+                    <div class="date">2021.1.15</div>
+                    <div class="count">33</div>
                 </div>
                 <div>
                     <div class="num">4</div>
                     <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
+                    <div class="date">2021.1.15</div>
+                    <div class="count">33</div>
                 </div>
                 <div>
                     <div class="num">3</div>
                     <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
-                    </div>
+                    <div class="date">2021.1.15</div>
+                    <div class="count">33</div>
+                </div>
                 <div>
                     <div class="num">2</div>
                     <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
+                    <div class="date">2021.1.15</div>
+                    <div class="count">33</div>
                 </div>
                 <div>
                     <div class="num">1</div>
                     <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
                     <div class="writer">김이름</div>
+                    <div class="date">2021.1.15</div>
+                    <div class="count">33</div>
                 </div>
             </div>
             <div class="board_page">
@@ -538,30 +550,30 @@
                 <a href="#" class="bt last">>></a>
             </div>
             <div class="bt_wrap">
-                <a href="r6" class="on">수정</a>
+                <a href="r9" class="on">등록</a>
                 <!--<a href="#">수정</a>-->
             </div>
         </div>
     </div>
     </body>
 
-<body>
+    <body>
 
-<main>
-    <jsp:include page="body.inc/header.jsp"/>
     <main>
-        <%--        <div class="container">--%>
+        <jsp:include page="body.inc/header.jsp"/>
+        <main>
+            <%--        <div class="container">--%>
 
+
+        </main>
 
     </main>
 
-</main>
-
-<script>
+    <script>
 
 
 
-</script>
+    </script>
 
-</body>
-</html>
+    </body>
+    </html>

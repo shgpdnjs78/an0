@@ -4,61 +4,10 @@
 <html>
 <head>
     <jsp:include page="template/header.jsp">
-        <jsp:param value="인덱스페이지4" name="title"/>
+        <jsp:param value="인덱스페이지9" name="title"/>
     </jsp:include>
 
-        <style>
-            .bd-placeholder-img {
-                font-size: 1.125rem;
-                text-anchor: middle;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-            }
-
-            @media (min-width: 768px) {
-                .bd-placeholder-img-lg {
-                    font-size: 3.5rem;
-                }
-            }
-
-            .b-example-divider {
-                height: 3rem;
-                background-color: rgba(0, 0, 0, .1);
-                border: solid rgba(0, 0, 0, .15);
-                border-width: 1px 0;
-                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-            }
-
-            .b-example-vr {
-                flex-shrink: 0;
-                width: 1.5rem;
-                height: 100vh;
-            }
-
-            .bi {
-                vertical-align: -.125em;
-                fill: currentColor;
-            }
-
-            .nav-scroller {
-                position: relative;
-                z-index: 2;
-                height: 2.75rem;
-                overflow-y: hidden;
-            }
-
-            .nav-scroller .nav {
-                display: flex;
-                flex-wrap: nowrap;
-                padding-bottom: 1rem;
-                margin-top: -1px;
-                overflow-x: auto;
-                text-align: center;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-            }
-
+    <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -110,9 +59,56 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        /*@import url(style.css);*/
-        /*@import url(media.css);*/
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
         @media (max-width: 1000px) {
             .board_wrap {
                 width: 100%;
@@ -194,7 +190,6 @@
                 width: 100%;
             }
         }
-
         * {
             margin: 0;
             padding: 0;
@@ -480,88 +475,63 @@
             resize: vertical;
         }
     </style>
+    <script>
 
-    <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>공지사항</title>
-        <link rel="stylesheet" href="css/css.css">
-    </head>
-    <body>
-    <div class="board_wrap">
-        <div class="board_title">
-            <strong>마이페이지</strong>
-        </div>
-        <div class="board_list_wrap">
-            <div class="board_list">
-                <div class="top">
-                    <div class="num">번호</div>
-                    <div class="title">제목</div>
-                    <div class="date">작성일</div>
-                </div>
-                <div>
-                    <div class="num">5</div>
-                    <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">김이름</div>
-                </div>
-                <div>
-                    <div class="num">4</div>
-                    <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">김이름</div>
-                </div>
-                <div>
-                    <div class="num">3</div>
-                    <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">김이름</div>
-                    </div>
-                <div>
-                    <div class="num">2</div>
-                    <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">김이름</div>
-                </div>
-                <div>
-                    <div class="num">1</div>
-                    <div class="title"><a href="main6.jsp">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">김이름</div>
-                </div>
-            </div>
-            <div class="board_page">
-                <a href="#" class="bt first"><<</a>
-                <a href="#" class="bt prev"><</a>
-                <a href="#" class="num on">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
-                <a href="#" class="bt next">></a>
-                <a href="#" class="bt last">>></a>
-            </div>
-            <div class="bt_wrap">
-                <a href="r6" class="on">수정</a>
-                <!--<a href="#">수정</a>-->
-            </div>
-        </div>
-    </div>
-    </body>
+    </script>
 
+</head>
 <body>
-
 <main>
     <jsp:include page="body.inc/header.jsp"/>
     <main>
-        <%--        <div class="container">--%>
-
+        <div class="container">
+            <!DOCTYPE html>
+            <html lang="ko">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>게시판</title>
+                <link rel="stylesheet" href="css/css.css">
+            </head>
+            <body>
+            <div class="board_wrap">
+                <div class="board_title">
+                    <strong>게시판</strong>
+                </div>
+                <div class="board_write_wrap">
+                    <div class="board_write">
+                        <div class="title">
+                            <dl>
+                                <dt>제목</dt>
+                                <dd><input type="text" placeholder="제목 입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>글쓴이</dt>
+                                <dd><input type="text" placeholder="글쓴이 입력"></dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <textarea placeholder="내용 입력"></textarea>
+                        </div>
+                    </div>
+                    <div class="bt_wrap">
+                        <a href="r10" class="on">등록</a>
+                        <a href="r8">취소</a>
+                    </div>
+                </div>
+            </div>
+            </body>
+            </html>
+        </div>
 
     </main>
 
 </main>
-
-<script>
-
-
-
-</script>
-
 </body>
 </html>
