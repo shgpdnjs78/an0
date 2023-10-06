@@ -587,7 +587,7 @@
 </head>
 <body>
 <main>
-    <jsp:include page="body.inc/header.jsp"/>
+    <jsp:include page="../template/header.jsp"/>
     <main>
         <div class="container">
 

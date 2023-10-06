@@ -66,7 +66,7 @@
 </head>
 <body>
 <main>
-    <jsp:include page="body.inc/header.jsp"/>
+    <jsp:include page="../template/header.jsp"/>
     <div class="container">
         여기는 내용!
         여기에 입력
