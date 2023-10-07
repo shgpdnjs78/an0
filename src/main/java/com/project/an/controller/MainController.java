@@ -18,15 +18,15 @@ public class MainController {
 
         return "/map";
     }
-    @GetMapping("r2")@PostMapping
+    @GetMapping("photo")@PostMapping
     public String root2() {
 
-        return "/main2";
+        return "/photo";
     }
-    @GetMapping("r3")@PostMapping
+    @GetMapping("mypage")@PostMapping
     public String root3() {
 
-        return "/main3";
+        return "/mypage";
     }
     @GetMapping("r4")@PostMapping
     public String root4() {
