@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @MapperScan(value = "com.project.an.mapper",sqlSessionFactoryRef = "sqlSessionFactoryBean")
 @RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
 public class MainController {
-    @GetMapping("")@PostMapping
+    @GetMapping("login")@PostMapping
     public String root() {
 
         return "/sample";
@@ -28,20 +28,20 @@ public class MainController {
 
         return "/mypage";
     }
-    @GetMapping("r4")@PostMapping
+    @GetMapping("password")@PostMapping
     public String root4() {
 
-        return "/main4";
+        return "/password";
     }
-    @GetMapping("r5")@PostMapping
+    @GetMapping("mymarker")@PostMapping
     public String root5() {
 
-        return "/main5";
+        return "/mymarker";
     }
-    @GetMapping("r6")@PostMapping
+    @GetMapping("cancel")@PostMapping
     public String root6() {
 
-        return "/main6";
+        return "/cancel";
     }
     @GetMapping("r7")@PostMapping
     public String root7() {
