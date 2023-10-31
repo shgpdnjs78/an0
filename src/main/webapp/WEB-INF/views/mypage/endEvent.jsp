@@ -35,6 +35,7 @@
         <a href="password" class="list-group-item">change password</a>
         <a href="mymarker" class="list-group-item">my marker</a>
         <a href="cancel" class="list-group-item">cancel account</a>
+        <a href="cs" class="list-group-item">문의사항</a>
       </div>
 
     </div>
@@ -70,7 +71,7 @@
       <div class="button-container">
         <a href="http://localhost/mymarker" button class="ing" onclick="ingEvent()">진행중인 이벤트</button> </a>
         <a href="http://localhost/endEvent" button class="end" onclick="endEvent()">종료된 이벤트</button> </a>
-<%--        <a href="http://localhost/r8" button id="post-button" class="custom7-button">게시판</button> </a>--%>
+        <%--        <a href="http://localhost/r8" button id="post-button" class="custom7-button">게시판</button> </a>--%>
       </div>
 
       <div class="col-lg-4 col-md-6 mb-4">

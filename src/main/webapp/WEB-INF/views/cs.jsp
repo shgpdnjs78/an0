@@ -8,8 +8,8 @@
     </jsp:include>
     <jsp:include page="../lib_template/head.css.jsp"/>
     <jsp:include page="../lib_template/head.js.jsp"/>
-    <link rel="stylesheet" href="/css/mypage/mypage.css">
-    <script src="/js/mypage/mypage.js"></script>
+    <link rel="stylesheet" href="/css/mypage/cs.css">
+    <script src="/js/mypage/cs.js"></script>
 </head>
 <body>
 <main>

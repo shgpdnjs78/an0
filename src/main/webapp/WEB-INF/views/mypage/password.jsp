@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +38,7 @@
           <a href="password" class="list-group-item">change password</a>
           <a href="mymarker" class="list-group-item">my marker</a>
           <a href="cancel" class="list-group-item">cancel account</a>
+          <a href="cs" class="list-group-item">문의사항</a>
         </div>
 
       </div>

@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +7,15 @@
     </jsp:include>
     <jsp:include page="../lib_template/head.css.jsp"/>
     <jsp:include page="../lib_template/head.js.jsp"/>
-    <link rel="stylesheet" href="/css/mypage/mypage.css">
-    <script src="/js/mypage/mypage.js"></script>
+    <link rel="stylesheet" href="/css/mypage/mymarkers.css">
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <script src="/js/mypage/mymarkers.js"></script>
 </head>
 <body>
 <main>
     <jsp:include page="../template/header.jsp"/>
     <div class="container">
-        <jsp:include page="mypage/mypage.jsp"/>
+        <jsp:include page="mypage/mymarkers.jsp"/>
 
     </div>
 </main>

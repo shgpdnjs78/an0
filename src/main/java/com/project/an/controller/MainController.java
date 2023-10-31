@@ -2,7 +2,9 @@ package com.project.an.controller;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @MapperScan(value = "com.project.an.mapper",sqlSessionFactoryRef = "sqlSessionFactoryBean")
@@ -43,25 +45,32 @@ public class MainController {
 
         return "/cancel";
     }
-    @GetMapping("r7")@PostMapping
+    @GetMapping("mymarkers")@PostMapping
     public String root7() {
 
-        return "/main7";
+        return "/mymarkers";
     }
-    @GetMapping("r8")@PostMapping
+    @GetMapping("singlemarker")@PostMapping
     public String root8() {
+//            @RequestParam("위치정보.coordinateX") String coordinateX, @RequestParam("coordinateY") String coordinateY,
+//            Model model
 
-        return "/main8";
+
+//        model.addAttribute("coordinateX",coordinateX);
+//        model.addAttribute("coordinateY",coordinateY);
+//        return "/singlemarker?id="+coordinateX+"pass="+coordinateY;
+        return "/singlemarker";
+
     }
-    @GetMapping("r9")@PostMapping
+    @GetMapping("endEvent")@PostMapping
     public String root9() {
 
-        return "/main9";
+        return "/endEvent";
     }
-    @GetMapping("r10")@PostMapping
+    @GetMapping("cs")@PostMapping
     public String root10() {
 
-        return "/main10";
+        return "/cs";
     }
     @GetMapping("r11")@PostMapping
     public String root11() {

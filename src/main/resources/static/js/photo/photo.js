@@ -38,7 +38,7 @@
     // 버튼 클릭 이벤트 리스너 추가
     nextButton.addEventListener("click", function () {
     // 새로운 URL로 이동
-    window.location.href = "http://localhost/r2";
+    window.location.href = "http://localhost/map";
 
 });
 }

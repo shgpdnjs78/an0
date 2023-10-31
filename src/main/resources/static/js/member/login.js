@@ -1,4 +1,4 @@
 
 function redirectToR2() {
-    window.location.href = "http://localhost/r2";
+    window.location.href = "http://localhost/map";
 }

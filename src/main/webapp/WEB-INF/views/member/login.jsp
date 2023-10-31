@@ -33,7 +33,7 @@
                                             <input type="password" id="logpass" class="form-style" placeholder="Your Password" autocomplete="off">
                                             <i class="input-icon uil uil-lock-alt"></i>
                                         </div>
-                                        <a href="http://localhost/r2" class="btn mt-4">submit</a>
+                                        <a href="http://localhost/map" class="btn mt-4">submit</a>
                                         <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
                                     </div>
                                 </div>

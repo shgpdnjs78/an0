@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +38,7 @@
                 <a href="password" class="list-group-item">change password</a>
                 <a href="mymarker" class="list-group-item">my marker</a>
                 <a href="cancel" class="list-group-item">cancel account</a>
+                <a href="cs" class="list-group-item">문의사항</a>
             </div>
 
         </div>
@@ -70,7 +72,7 @@
                 <label for="issue7">Privacy and security concerns</label><br>
 
                 <input type="checkbox" id="issue8">
-                <label for="issue8">System errow</label><br>
+                <label for="issue8">시스템 오류</label><br>
 
                 <input type="checkbox" id="issue9">
                 <label for="issue9">not use Yogomogo</label><br>

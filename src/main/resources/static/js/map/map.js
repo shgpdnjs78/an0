@@ -8,6 +8,9 @@ var custom_fitter1;
 var custom_fitter2;
 var custom_fitter3;
 var custom_fitter4;
+
+var dlfeks;
+
 custom_fitter1 = document.getElementsByClassName('custom1-button');
 $('.custom1-button').on('click', function(){
     //클릭시 fitter1의 마커만 나온다
@@ -23,7 +26,19 @@ $('.custom1-button').on('click', function(){
     //each?
     // 마커의 클래스를 불러오는 코드랑 같대유 ,변수에 저장?
 
+//     버튼 1 클릭 시 버튼의 정보가 나온다
+//     만약 버튼이 내 위치 근처에 있을시 버튼의 정보가 유효한지 알림이 뜬다
+//     yes를 클릭 시 마커는 유지되고 No 클릭 시 마커는 사라지게 된다.
+//     버튼의 정보는 카테고리(사건, 음식 , 공연, 기타) 버튼 중 하나와 추가설명 , 사진이 등록되어있다.
+//     등록한 날짜와 시간은 ui에 보이지 않는다.
+//     등록한 마커의 유효 시간은 6시간이다.
+
+//     등록할 시
+
 });
+//커스텀버튼2
+//커스텀버튼3
+//커스텀버튼4
 
 // 마커의 아이콘 이미지를 설정할 수 있는 객체
 
@@ -42,7 +57,7 @@ marker4.setIcon(customIcon4);
 function initMap() {
     // 맵 초기화 및 구성
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 35.893653, lng: 128.620130},
+        center: {lat: 1234, lng: 12345},
         zoom: 15
     });
 
@@ -91,6 +106,8 @@ function initMap() {
                 icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
             });
 
+            dlfeks = marker4;
+            console.log(dlfeks);
             // 마커 클릭 이벤트 처리
             marker.addListener('click', function() {
                 // 정보 창 생성
@@ -120,7 +137,7 @@ function initMap() {
                         '<button class="gray-button" onclick="selectCategory(this, \'green-button\')">기타</button>' +
                         '<p>추가설명</p>' +
                         '<input type="text" name="extra" class="form-style" placeholder="추가설명을 입력하세요">' +
-                        '<button id="cam-button" class="custom8-button" onclick="window.location.href=\'http://localhost/r3\'">사진찍기</button>'
+                        '<button id="cam-button" class="custom8-button" onclick="window.location.href=\'http://localhost/photo\'">사진찍기</button>'
                 });
 
                 // Create InfoWindows for each marker

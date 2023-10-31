@@ -1,6 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="utf-8">
@@ -15,6 +16,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -33,6 +37,8 @@
         <a href="password" class="list-group-item">change password</a>
         <a href="mymarker" class="list-group-item">my marker</a>
         <a href="cancel" class="list-group-item">cancel account</a>
+        <a href="cs" class="list-group-item">문의사항</a>
+
       </div>
 
     </div>
@@ -46,18 +52,65 @@
 <%--          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--%>
 <%--          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>--%>
         </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
-          </div>
-<%--          <div class="carousel-item">--%>
-<%--            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">--%>
-<%--          </div>--%>
-<%--          <div class="carousel-item">--%>
-<%--            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">--%>
-<%--          </div>--%>
-        </div>
-<%--        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--%>
+
+
+        <section class="about">
+          <!-- 이름 -->
+          <header class="name">
+            <p>&nbsp<span style="color: #2B3856;">HYEWON NOH</span></p>
+            <!-- 연락처 -->
+            <%--  이름 이메일 비번--%>
+            <div class="contacts">
+<%--                <p id="phoneNumber">📞+(82)10-2385-6794</p>--%>
+                <!-- 이메일 출력 영역 -->
+<%--                <p id="email">📧shgpdnjs78@gmail.com</p>--%>
+                <!-- 전화번호 입력 폼 -->
+                <button class="list-group-item" onclick="editPhoneNumber()">Edit Phone Number</button>
+                <button class="list-group-item" onclick="editEmail()">Edit Email</button>
+
+                <div id="phoneNumberForm" style="display: none;">
+                    <input type="text" id="newPhoneNumber">
+                    <button onclick="updatePhoneNumber()">Confirm</button>
+                </div>
+                <!-- 이메일 입력 폼 -->
+                <div id="emailForm" style="display: none;">
+                    <input type="email" id="newEmail">
+                    <button onclick="updateEmail()">Confirm</button>
+                </div>
+
+              <form id="profileImageForm" enctype="multipart/form-data">
+                <input type="file" name="profileImage" accept="image/*">
+                <button type="submit">upload</button>
+              </form>
+              <div id="profileImagePreview"></div>
+
+              <div class="box" style="background: #BDBDBD;">
+                <img class="profile" src="/images/tistory.JPG">
+              </div>
+<%--              여기 어떻게 하면 좋을꽁?--%>
+    <section class="about">
+        <!-- 이름 -->
+        <header class="name">
+            <p>&nbsp<span style="color: #2B3856;">HYEWON NOH</span></p>
+            <!-- 연락처 -->
+            <div class="contacts">
+                <p id="phoneNumber">📞+(82)10-2385-6794</p>
+                <p id="email">📧shgpdnjs78@gmail.com</p>
+                </div>
+          </header>
+          <br><br>
+          <!-- 소개글 -->
+          <article class="main-introduction">
+            <p> introduction
+              안녕하세요! 노혜원입니다.<br>
+              맛집 탐방을 하고 싶어 시작했습니다.</p>
+            <br>
+            <p style="opacity: 1">앞으로 잘 부탁드립니다.♀️</p>
+          </article>
+          <br><br>
+        </section>
+
+        <%--        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--%>
 <%--          <span class="carousel-control-prev-icon" aria-hidden="true"></span>--%>
 <%--          <span class="sr-only">Previous</span>--%>
 <%--        </a>--%>
@@ -67,105 +120,7 @@
 <%--        </a>--%>
       </div>
 
-      <div class="row">
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-One</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-Two</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-Three</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-Four</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-Five</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Post-Six</a>
-              </h4>
-              <h5>food</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
       <!-- /.row -->
 
     </div>
